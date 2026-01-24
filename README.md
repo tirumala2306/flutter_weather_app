@@ -9,60 +9,60 @@ A beautiful, modern weather application built with Flutter featuring stunning gl
 ## ✨ Features
 
 ### 🎨 Beautiful UI/UX
-- *Glassmorphism Design* - Modern frosted glass aesthetic
-- *Gradient Backgrounds* - Stunning blue-to-purple gradients
-- *Material Design 3* - Latest design guidelines
-- *Smooth Animations* - Fluid user experience
-- *Responsive Layout* - Works on all screen sizes
+- **Glassmorphism Design** - Modern frosted glass aesthetic
+- **Gradient Backgrounds** - Stunning blue-to-purple gradients
+- **Material Design 3** - Latest design guidelines
+- **Smooth Animations** - Fluid user experience
+- **Responsive Layout** - Works on all screen sizes
 
 ### 🌦️ Weather Features
-- *Real-time Weather* - Current weather conditions
-- *5-Day Forecast* - Plan ahead with extended forecasts
-- *City Search* - Search for any city worldwide
-- *Favorites* - Save your favorite cities
-- *Weather Details* - Temperature, humidity, wind speed, feels like
-- *Temperature Units* - Toggle between Celsius and Fahrenheit
+- **Real-time Weather** - Current weather conditions
+- **5-Day Forecast** - Plan ahead with extended forecasts
+- **City Search** - Search for any city worldwide
+- **Favorites** - Save your favorite cities
+- **Weather Details** - Temperature, humidity, wind speed, feels like
+- **Temperature Units** - Toggle between Celsius and Fahrenheit
 
 ### 👤 User Features
-- *User Authentication* - Secure login and registration via Supabase
-- *User Profiles* - Personalized experience
-- *Settings* - Customize your preferences
-- *Persistent Data* - Your favorites are saved
+- **User Authentication** - Secure login and registration via Supabase
+- **User Profiles** - Personalized experience
+- **Settings** - Customize your preferences
+- **Persistent Data** - Your favorites are saved
 
 ## 📱 Screenshots
 
 ### Main Screens
-- *Login Screen* - Welcome page with cloud icon and glass form
-- *Home Screen* - Weather display with current conditions and forecast
-- *Search Screen* - Find cities with beautiful search interface
-- *Favorites Screen* - Quick access to saved cities
-- *Settings Screen* - User profile and preferences
-- *Register Screen* - Create new account
+- **Login Screen** - Welcome page with cloud icon and glass form
+- **Home Screen** - Weather display with current conditions and forecast
+- **Search Screen** - Find cities with beautiful search interface
+- **Favorites Screen** - Quick access to saved cities
+- **Settings Screen** - User profile and preferences
+- **Register Screen** - Create new account
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- *Flutter* - UI framework
-- *Dart* - Programming language
-- *Material Design 3* - Design system
+- **Flutter** - UI framework
+- **Dart** - Programming language
+- **Material Design 3** - Design system
 
 ### State Management
-- *Flutter BLoC* - Business logic component
-- *Cubit* - Lightweight state management
-- *Equatable* - Value equality
+- **Flutter BLoC** - Business logic component
+- **Cubit** - Lightweight state management
+- **Equatable** - Value equality
 
 ### Backend & Services
-- *Supabase* - Authentication and database
-- *HTTP* - API requests
-- *Weather API* - Real-time weather data
+- **Supabase** - Authentication and database
+- **HTTP** - API requests
+- **Weather API** - Real-time weather data
 
 ### UI Components
-- *Google Fonts* - Inter typography
-- *Flutter SVG* - Vector graphics support
+- **Google Fonts** - Inter typography
+- **Flutter SVG** - Vector graphics support
 
 ## 📦 Dependencies
 
-yaml
+```yaml
 dependencies:
   flutter:
     sdk: flutter
@@ -79,7 +79,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-
+```
 
 ## 🚀 Getting Started
 
@@ -91,41 +91,41 @@ dev_dependencies:
 
 ### Installation
 
-1. *Clone the repository*
-bash
+1. **Clone the repository**
+```bash
 git clone https://github.com/yourusername/glasscast.git
 cd glasscast
+```
 
-
-2. *Install dependencies*
-bash
+2. **Install dependencies**
+```bash
 flutter pub get
+```
 
-
-3. *Set up Supabase*
+3. **Set up Supabase**
    - Create a Supabase project at [supabase.com](https://supabase.com)
    - Copy your project URL and anon key
-   - Update lib/main.dart with your credentials:
+   - Update `lib/main.dart` with your credentials:
 
-dart
+```dart
 await Supabase.initialize(
   url: 'YOUR_SUPABASE_URL',
   anonKey: 'YOUR_SUPABASE_ANON_KEY',
 );
+```
 
-
-4. *Get a Weather API key* (if using external API)
+4. **Get a Weather API key** (if using external API)
    - Sign up for a weather API service
    - Add your API key to the project
 
-5. *Run the app*
-bash
+5. **Run the app**
+```bash
 flutter run
-
+```
 
 ## 📁 Project Structure
 
-
+```
 lib/
 ├── core/
 │   ├── routes/
@@ -170,35 +170,35 @@ lib/
 │   └── gradient_background.dart     # Gradient background widget
 ├── app.dart                         # App configuration
 └── main.dart                        # Entry point
-
+```
 
 ## 🎨 Design System
 
 ### Color Palette
 
-*Gradient Colors:*
-dart
+**Gradient Colors:**
+```dart
 gradientStart:  #1E3A8A  // Deep blue
 gradientMiddle: #6366F1  // Indigo
 gradientEnd:    #8B5CF6  // Purple
+```
 
-
-*Accent Colors:*
-dart
+**Accent Colors:**
+```dart
 accent:         #7DD3FC  // Light sky blue
 accentSecondary: #60A5FA // Sky blue
+```
 
-
-*Glass Effects:*
-dart
+**Glass Effects:**
+```dart
 glassBackground: rgba(255, 255, 255, 0.15)
 glassBorder:     rgba(255, 255, 255, 0.20)
-
+```
 
 ### Typography
-- *Primary Font:* Inter (via Google Fonts)
-- *Font Sizes:* 11px - 72px
-- *Font Weights:* 400 (normal) - 700 (bold)
+- **Primary Font:** Inter (via Google Fonts)
+- **Font Sizes:** 11px - 72px
+- **Font Weights:** 400 (normal) - 700 (bold)
 
 ## 🔧 Configuration
 
@@ -207,38 +207,38 @@ The app supports both Celsius and Fahrenheit. Users can toggle between units in 
 
 ### API Configuration
 Weather data is fetched from a weather API. Configure your API endpoint in:
-
+```
 lib/features/home/repository/weather_repository.dart
-
+```
 
 ## 🧪 Testing
 
 Run tests with:
-bash
+```bash
 flutter test
-
+```
 
 Run widget tests:
-bash
+```bash
 flutter test test/widget_test.dart
-
+```
 
 ## 📱 Building for Production
 
 ### Android
-bash
+```bash
 flutter build apk --release
-
+```
 
 ### iOS
-bash
+```bash
 flutter build ios --release
-
+```
 
 ### Web
-bash
+```bash
 flutter build web --release
-
+```
 
 ## 🐛 Known Issues
 
@@ -260,9 +260,9 @@ flutter build web --release
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the project
-2. Create your feature branch (git checkout -b feature/AmazingFeature)
-3. Commit your changes (git commit -m 'Add some AmazingFeature')
-4. Push to the branch (git push origin feature/AmazingFeature)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## 📄 License
@@ -271,8 +271,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-*Tirumala*
-- Email: thirumalagali000.com
+**Tirumala gali**
+- Email: thirumalagali000@gmail.com
 
 ## 🙏 Acknowledgments
 
@@ -291,4 +291,5 @@ Give a ⭐️ if this project helped you!
 
 ---
 
-*Made with ❤️ using Flutter*
+**Made with ❤️ using Flutter**
+
